@@ -93,6 +93,7 @@ export const AuthProvider = ({ children }) => {
 
       if (response.ok) {
         const data = await response.json();
+        console.log(data);
         sproductData(data.slice(0, data.length / 2));
         sproductData2(data.slice(data.length / 2));
       }

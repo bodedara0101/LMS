@@ -32,6 +32,8 @@ const Orders = () => {
       if (response.ok) {
         const res_data = await response.json();
         sorderData(res_data);
+        console.log(res_data);
+
       }
       if (!response.ok) {
         const res_data = await response.json();

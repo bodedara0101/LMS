@@ -29,7 +29,7 @@ const Footer = () => {
                 <ul className="text-gray-500 dark:text-gray-400 font-medium">
                   <li className="mb-4">
                     <a
-                      href="https://github.com/RajOdedara4u"
+                      href="https://github.com/bodedara0101"
                       className="hover:underline"
                     >
                       Github
@@ -37,7 +37,7 @@ const Footer = () => {
                   </li>
                   <li>
                     <a
-                      href="https://www.linkedin.com/in/raj-maher"
+                      href="https://www.linkedin.com/in/bodedara0101"
                       className="hover:underline"
                     >
                       linkedin
@@ -50,17 +50,9 @@ const Footer = () => {
                   Follow us
                 </h2>
                 <ul className="text-gray-500 dark:text-gray-400 font-medium">
-                  <li className="mb-4">
-                    <a
-                      href="https://www.youtube.com/@Raj_odedara4u"
-                      className="hover:underline "
-                    >
-                      Youtube
-                    </a>
-                  </li>
                   <li>
                     <a
-                      href="https://www.instagram.com/save_point4u/"
+                      href="https://www.instagram.com/bharatodedara0101/"
                       className="hover:underline"
                     >
                       Instagram
@@ -74,16 +66,16 @@ const Footer = () => {
                 </h2>
                 <ul className="text-gray-500 dark:text-gray-400 font-medium">
                   <li className="mb-4">
-                    <a href="tel:+917069439842" className="hover:underline">
-                      +91 706 943 9842
+                    <a href="tel:+917600455547" className="hover:underline">
+                      +91 7600455547
                     </a>
                   </li>
                   <li>
                     <a
-                      href="mailto:odedararaj4u@gmail.com"
+                      href="mailto:bharatodedara930@gmail.com"
                       className="hover:underline"
                     >
-                      odedararaj4u@gmail.com
+                      bharatodedara930@gmail.com
                     </a>
                   </li>
                 </ul>
@@ -93,7 +85,7 @@ const Footer = () => {
           <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
           <div className="sm:flex sm:items-center sm:justify-between">
             <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
-              © 2024 Devloped and Managed by Raj Odedara
+              © {new Date().getFullYear()} Devloped and Managed by Bharat Odedara
             </span>
             <div className="flex mt-4 sm:justify-center items-center sm:mt-0">
               <a
