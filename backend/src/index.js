@@ -33,7 +33,6 @@ if (process.env.NODE_ENV === "production") {
   });
 }
 
-const PORT = process.env.PORT;
 // Start the server after successful DB connection
 mongoCD().then(() => {
   const port = process.env.PORT || 5001;
