@@ -89,7 +89,7 @@ const Footer = () => {
             </span>
             <div className="flex mt-4 sm:justify-center items-center sm:mt-0">
               <a
-                href="https://www.instagram.com/save_point4u/"
+                href="https://www.instagram.com/bharatodedara0101/"
                 className=" dark:hover:text-white"
               >
                 <svg
@@ -103,45 +103,7 @@ const Footer = () => {
                 <span className="sr-only">instagram page</span>
               </a>
               <a
-                href="https://www.youtube.com/@Raj_odedara4u"
-                className="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="w-5 fill-gray-500 dark:hover:fill-white"
-                  xmlSpace="preserve"
-                  viewBox="0 0 16 16"
-                  id="youtube"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M15.32 4.06c-.434-.772-.905-.914-1.864-.968C12.498 3.027 10.089 3 8.002 3c-2.091 0-4.501.027-5.458.091-.957.055-1.429.196-1.867.969C.23 4.831 0 6.159 0 8.497v.008c0 2.328.23 3.666.677 4.429.438.772.909.912 1.866.977.958.056 3.368.089 5.459.089 2.087 0 4.496-.033 5.455-.088.959-.065 1.43-.205 1.864-.977.451-.763.679-2.101.679-4.429v-.008c0-2.339-.228-3.667-.68-4.438zM6 11.5v-6l5 3-5 3z"
-                    clipRule="evenodd"
-                  ></path>
-                </svg>
-                <span className="sr-only">Youtube community</span>
-              </a>
-              <a
-                href="https://x.com/RAJBHAI4955"
-                className="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5"
-              >
-                <svg
-                  className="w-4 h-4"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="currentColor"
-                  viewBox="0 0 20 17"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M20 1.892a8.178 8.178 0 0 1-2.355.635 4.074 4.074 0 0 0 1.8-2.235 8.344 8.344 0 0 1-2.605.98A4.13 4.13 0 0 0 13.85 0a4.068 4.068 0 0 0-4.1 4.038 4 4 0 0 0 .105.919A11.705 11.705 0 0 1 1.4.734a4.006 4.006 0 0 0 1.268 5.392 4.165 4.165 0 0 1-1.859-.5v.05A4.057 4.057 0 0 0 4.1 9.635a4.19 4.19 0 0 1-1.856.07 4.108 4.108 0 0 0 3.831 2.807A8.36 8.36 0 0 1 0 14.184 11.732 11.732 0 0 0 6.291 16 11.502 11.502 0 0 0 17.964 4.5c0-.177 0-.35-.012-.523A8.143 8.143 0 0 0 20 1.892Z"
-                    clipRule="evenodd"
-                  />
-                </svg>
-                <span className="sr-only">Twitter page</span>
-              </a>
-              <a
-                href="https://github.com/RajOdedara4u"
+                href="https://github.com/bodedara0101"
                 className="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5"
               >
                 <svg
@@ -159,7 +121,7 @@ const Footer = () => {
                 </svg>
                 <span className="sr-only">GitHub account</span>
               </a>
-              <a href="https://www.linkedin.com/in/raj-maher" className=" ms-5">
+              <a href="https://www.linkedin.com/in/bodedara0101" className=" ms-5">
                 <svg
                   className="fill-gray-500 hover:fill-gray-900 dark:hover:fill-white w-4"
                   xmlns="http://www.w3.org/2000/svg"

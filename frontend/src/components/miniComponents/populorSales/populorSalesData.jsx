@@ -13,7 +13,7 @@ const populorSalesData = [
     author: "james gosling",
     year: "june 2011",
     discount: "45",
-    rating: "4.6",
+    rating: "5",
     catagory: "motivation",
   },
   {
@@ -26,7 +26,7 @@ const populorSalesData = [
     author: "james gosling",
     year: "june 2011",
     discount: "45",
-    rating: "4.6",
+    rating: "5",
     catagory: "motivation",
   },
   {
@@ -39,7 +39,7 @@ const populorSalesData = [
     author: "james gosling",
     year: "june 2011",
     discount: "45",
-    rating: "4.6",
+    rating: "5",
     catagory: "funny",
   },
 ];
