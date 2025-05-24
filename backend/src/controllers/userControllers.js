@@ -28,7 +28,7 @@ const registration = async (req, res) => {
       userId: userCreated._id.toString(),
     });
   } catch (error) {
-    res.status(400).send("sorry", error);
+    res.status(400).json("sorry", error);
   }
 };
 //----------------------------------------------------------------------------------------------------------------------------------
