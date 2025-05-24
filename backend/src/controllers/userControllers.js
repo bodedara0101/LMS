@@ -34,6 +34,7 @@ const registration = async (req, res) => {
   } catch (error) {
     console.log(error)
     res.status(400).json({ message: "Registration failed", error: error.message });
+    res.status(400).send(error);
   }
 };
 //----------------------------------------------------------------------------------------------------------------------------------
