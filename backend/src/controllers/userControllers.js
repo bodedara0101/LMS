@@ -7,11 +7,13 @@ const registration = async (req, res) => {
   try {
     const { name, email, password, isAdmin } = req.body;
 
-    const userExsit = await User.findOne({ email });
+    const userExist = await User.findOne({ email });
 
-    if (userExsit) {
+    if (userExist) {
       return res.status(400).json({ message: "User Alredy Exist!" });
     }
+
+    console.log("hello")
 
     const userCreated = await User.create({
       name,
@@ -19,6 +21,8 @@ const registration = async (req, res) => {
       password,
       isAdmin,
     });
+
+    console.log(userCreated)
 
     //after registration genrating token for user
     res.status(200).json({
@@ -28,7 +32,8 @@ const registration = async (req, res) => {
       userId: userCreated._id.toString(),
     });
   } catch (error) {
-    res.status(400).send("sorry", error);
+    console.log(error)
+    res.status(400).json({ message: "Registration failed", error: error.message });
   }
 };
 //----------------------------------------------------------------------------------------------------------------------------------
@@ -38,25 +43,25 @@ const login = async (req, res) => {
   try {
     const { email, password } = req.body;
 
-    const userExsit = await User.findOne({ email }); // if email is found on db userExsit variable store all info of the user
+    const userExist = await User.findOne({ email }); // if email is found on db userExist variable store all info of the user
 
-    if (!userExsit) {
+    if (!userExist) {
       return res.status(400).json({ message: "email is not found" });
     } else {
-      const userValid = await userExsit.checkPassword(password);
+      const userValid = await userExist.checkPassword(password);
 
       if (userValid) {
         res.status(200).json({
           message: "Login Sucess...",
-          token: await userExsit.genrateToken(),
-          userId: userExsit._id.toString(),
+          token: await userExist.genrateToken(),
+          userId: userExist._id.toString(),
         });
       } else {
         res.status(400).json({ message: "invalid password" });
       }
     }
   } catch (error) {
-    res.status(400).send(error);
+    res.status(400).json({ message: "Login failed", error: error.message });
     console.log(error);
   }
 };
