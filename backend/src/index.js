@@ -2,7 +2,7 @@ import express from "express";
 const app = express();
 import authRouter from "./router/auth-router.js";
 import Userrouter from "./router/user-router.js";
-import mongoCD from "./lib/db.js";
+import mongoDB from "./lib/db.js";
 import { config } from "dotenv";
 import errorMiddleware from "./middlewares/error-middleware.js";
 import cors from "cors";
@@ -34,7 +34,7 @@ if (process.env.NODE_ENV === "production") {
 }
 
 // Start the server after successful DB connection
-mongoCD().then(() => {
+mongoDB().then(() => {
   const port = process.env.PORT || 5001;
   app.listen(port, () => {
     console.log(`Server is running on port ${port}...`);

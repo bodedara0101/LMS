@@ -9,6 +9,7 @@ const Superadmins = () => {
     {
       name: "",
       email: "",
+      isAdmin: "",
     },
   ]);
   useEffect(() => {
@@ -65,6 +66,7 @@ const Superadmins = () => {
                       key={index}
                       index={index}
                       _id={obj._id}
+                      isAdmin={obj.isAdmin}
                       name={obj.name}
                       email={obj.email}
                     />

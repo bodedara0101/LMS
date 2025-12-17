@@ -52,6 +52,7 @@ const Login = () => {
         if (response.ok) {
           toast.success(res_data.message);
           storeToken(res_data.token);
+          // store the admin state into store
           navigate("/");
         }
         if (!response.ok) {

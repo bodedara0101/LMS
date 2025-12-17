@@ -2,7 +2,7 @@ import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import { AuthContext } from "../../../../store/contexStore/store";
 import { useContext } from "react";
-const SingleSAdmin = ({ index, name, email, _id }) => {
+const SingleSAdmin = ({ index, name, email, _id, isAdmin }) => {
   const { BASE_URL } = useContext(AuthContext);
   const navigate = useNavigate();
   const delateuser = async () => {
@@ -35,12 +35,21 @@ const SingleSAdmin = ({ index, name, email, _id }) => {
         <td className="px-6 py-4">{email}</td>
 
         <td className="px-6 py-4">
-          <button
+          {
+            !isAdmin ? <button
             onClick={delateuser}
             className="font-medium text-red-600 hover:underline"
           >
             Delate
+          </button>:
+            <button
+            onClick={delateuser}
+            disabled={true}
+            className="font-medium cursor-not-allowed text-gray-300 hover:underline"
+          >
+            Delate
           </button>
+          }
         </td>
       </tr>
     </>

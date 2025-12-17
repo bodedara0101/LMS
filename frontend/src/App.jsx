@@ -36,6 +36,12 @@ function App() {
     sisLoggedInn(isLoggedIn);
   }, [isAdmin, isLoggedIn]);
 
+  const AdminRoute = ({ children }) => {
+  if (!isAdminn) return <Login />; // or redirect
+  return children;
+};
+
+
   return (
     <>
       <BrowserRouter>
@@ -58,7 +64,7 @@ function App() {
           ) : null}
 
           {/* Admin Routes */}
-          {isAdminn ? <Route path="/dashboard" element={<Dasboard />} /> : null}
+          <Route path="/dashboard" element={<AdminRoute><Dasboard /></AdminRoute>} />
           {isAdminn ? <Route path="/orders" element={<Orders />} /> : null}
           {isAdminn ? <Route path="/inbox" element={<Inbox />} /> : null}
           {isAdminn ? <Route path="/users" element={<Users />} /> : null}
